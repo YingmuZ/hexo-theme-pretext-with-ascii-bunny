@@ -8,7 +8,7 @@ var showExcerpt = item.excerpt && item.excerpt.length > 0;
   </div>
   <% } %>
   <header>
-    <h2 class="font-heading text-2xl sm:text-3xl font-medium leading-tight">
+    <h2 class="font-heading text-xl sm:text-2xl font-medium leading-tight">
       <% if (item.title) { %>
       <a href="<%- url_for(item.path) %>" class="hover:text-accent dark:hover:text-accent-dark transition-colors">
         <%= item.title %>

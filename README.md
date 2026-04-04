@@ -114,6 +114,38 @@ See `_config.yml` in the theme directory for all available options.
 
 Pretext is used as a **progressive enhancement layer** — all content is fully readable without JavaScript. The four animation scenes (hero, post ornament, archive flow, 404 easter egg) load `@chenglou/pretext` from CDN on demand and gracefully degrade to CSS fallbacks.
 
+## Password Protection / 文章密码保护
+
+This theme has built-in style support for [hexo-blog-encrypt](https://github.com/D0n9X1n/hexo-blog-encrypt). Install the plugin in your site root:
+
+本主题内置了 [hexo-blog-encrypt](https://github.com/D0n9X1n/hexo-blog-encrypt) 的样式适配。在站点根目录安装插件：
+
+```bash
+npm install hexo-blog-encrypt --save
+```
+
+Add to your site `_config.yml`:
+
+```yaml
+encrypt:
+  enable: true
+  abstract: "This post is password protected."
+  message: "Enter password"
+```
+
+Then add `password` to any post's front-matter:
+
+```yaml
+---
+title: My Secret Post
+password: your-password-here
+abstract: This is a protected post.
+message: Enter password to read
+---
+```
+
+The password input UI will automatically match the theme's light/dark mode and typography.
+
 ## Disqus Support
 
 To enable Disqus, set `disqus_shortname` in your site's `_config.yml`, or configure via the theme's comment settings:
