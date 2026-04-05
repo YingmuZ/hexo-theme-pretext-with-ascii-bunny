@@ -167,4 +167,100 @@
   .dark .toc-nav a:hover {
     color: #E8563A;
   }
+
+  /* hexo-blog-encrypt style overrides */
+  #hexo-blog-encrypt {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 3rem 0;
+  }
+
+  #hexo-blog-encrypt .hbe-abstract {
+    font-family: "Noto Serif JP", "Noto Serif SC", Georgia, serif;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #6B6B6B;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .dark #hexo-blog-encrypt .hbe-abstract {
+    color: #8A8A8A;
+  }
+
+  #hexo-blog-encrypt .hbe-input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+
+  #hexo-blog-encrypt .hbe-input-container .hbe-message {
+    display: none;
+  }
+
+  #hexo-blog-encrypt .hbe-input-container input[type="password"] {
+    width: 240px;
+    padding: 0.5rem 0.75rem;
+    font-family: "JetBrains Mono", "Fira Code", monospace;
+    font-size: 0.875rem;
+    color: #1A1A1A;
+    background: #FAFAF8;
+    border: 1px solid #E8E6E3;
+    border-radius: 0.25rem;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+
+  .dark #hexo-blog-encrypt .hbe-input-container input[type="password"] {
+    color: #E0DED8;
+    background: #121212;
+    border-color: #2A2A2A;
+  }
+
+  #hexo-blog-encrypt .hbe-input-container input[type="password"]:focus {
+    border-color: #3acce8;
+  }
+
+  .dark #hexo-blog-encrypt .hbe-input-container input[type="password"]:focus {
+    border-color: #E8563A;
+  }
+
+  #hexo-blog-encrypt .hbe-input-container input[type="password"]::placeholder {
+    color: #6B6B6B;
+    opacity: 0.6;
+  }
+
+  .dark #hexo-blog-encrypt .hbe-input-container input[type="password"]::placeholder {
+    color: #8A8A8A;
+  }
+
+  #hexo-blog-encrypt .hbe-input-container button {
+    padding: 0.5rem 1rem;
+    font-family: "JetBrains Mono", "Fira Code", monospace;
+    font-size: 0.75rem;
+    color: #6B6B6B;
+    background: transparent;
+    border: 1px solid #E8E6E3;
+    border-radius: 9999px;
+    cursor: pointer;
+    transition: color 0.2s, border-color 0.2s;
+  }
+
+  .dark #hexo-blog-encrypt .hbe-input-container button {
+    color: #8A8A8A;
+    border-color: #2A2A2A;
+  }
+
+  #hexo-blog-encrypt .hbe-input-container button:hover {
+    color: #3acce8;
+    border-color: #3acce8;
+  }
+
+  .dark #hexo-blog-encrypt .hbe-input-container button:hover {
+    color: #E8563A;
+    border-color: #E8563A;
+  }
 }
