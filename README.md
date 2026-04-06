@@ -1,14 +1,14 @@
 # hexo-theme-pretext
 
-简洁日式排版风格的 Hexo 博客主题，集成 [@chenglou/pretext](https://github.com/chenglou/pretext) ASCII 动画效果。
+极简风格 Hexo 博客主题，集成 [@chenglou/pretext](https://github.com/chenglou/pretext) ASCII 动画效果。
 
-A minimal Japanese-inspired Hexo blog theme with ASCII animations powered by [@chenglou/pretext](https://github.com/chenglou/pretext).
+A minimal Hexo blog theme with ASCII animations powered by [@chenglou/pretext](https://github.com/chenglou/pretext).
 
 ---
 
 ## Features
 
-- Clean, spacious Japanese typography with generous whitespace
+- Clean, spacious typography with generous whitespace
 - Dark mode (auto + manual toggle)
 - ASCII animations via `@chenglou/pretext` (progressive enhancement)
 - Responsive, mobile-first design
