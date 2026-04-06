@@ -76,6 +76,37 @@
     padding: 0;
   }
 
+  /* Hexo highlight.js code blocks */
+  .prose figure.highlight {
+    margin: 1.5em 0;
+    overflow-x: auto;
+  }
+
+  .prose figure.highlight table {
+    width: auto;
+    border: none;
+  }
+
+  .prose figure.highlight td {
+    border: none;
+    padding: 0;
+  }
+
+  .prose figure.highlight .gutter {
+    padding-right: 0.75em;
+    text-align: right;
+    color: #999;
+    user-select: none;
+  }
+
+  /* Embedded videos & iframes */
+  .prose iframe,
+  .prose video,
+  .prose embed,
+  .prose object {
+    max-width: 100%;
+  }
+
   .prose ul,
   .prose ol {
     padding-left: 1.5em;

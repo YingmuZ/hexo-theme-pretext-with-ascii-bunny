@@ -1,14 +1,14 @@
 {
   "name": "hexo-theme-pretext",
   "version": "1.0.0",
-  "description": "A minimal Japanese-inspired Hexo blog theme with ASCII animations powered by @chenglou/pretext",
+  "description": "A minimal Hexo blog theme with ASCII animations powered by @chenglou/pretext",
   "main": "index.js",
   "keywords": [
     "hexo",
     "hexo-theme",
     "blog",
     "minimal",
-    "japanese",
+    "pretext-animation",
     "ascii",
     "pretext"
   ],

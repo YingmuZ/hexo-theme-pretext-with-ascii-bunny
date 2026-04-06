@@ -41,6 +41,11 @@ var showHero = theme.pretext && theme.pretext.hero && theme.pretext.hero.enable;
                     <h2 class="text-sm font-medium leading-snug group-hover:text-accent dark:group-hover:text-accent-dark transition-colors">
                       <%= item.title || (__('post.untitled') || 'Untitled') %>
                     </h2>
+                    <% if (item.excerpt) { %>
+                    <p class="mt-1 text-xs text-text-secondary dark:text-text-secondary-dark line-clamp-2 leading-relaxed">
+                      <%- strip_html(item.excerpt).substring(0, 120) %>
+                    </p>
+                    <% } %>
                     <% if (item.tags && item.tags.length) { %>
                     <div class="mt-0.5 flex flex-wrap gap-1.5">
                       <% item.tags.forEach(function(tag) { %>
