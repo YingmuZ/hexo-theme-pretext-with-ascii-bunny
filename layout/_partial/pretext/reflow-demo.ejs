@@ -4,6 +4,10 @@
 var htmlContent = (page.content || '').replace(/\r\n/g, '\n');
 var withBreaks = htmlContent.replace(/<\/p>\s*<p[^>]*>/gi, '\n\n').replace(/<br\s*\/?>/gi, '\n');
 var plainText = strip_html(withBreaks).trim();
+// Decode HTML entities left over from strip_html (e.g. &#x2F; → /, &#39; → ')
+plainText = plainText.replace(/&#x([0-9a-fA-F]+);/g, function(_, hex) { return String.fromCharCode(parseInt(hex, 16)); });
+plainText = plainText.replace(/&#(\d+);/g, function(_, dec) { return String.fromCharCode(parseInt(dec, 10)); });
+plainText = plainText.replace(/&quot;/g, '"').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&');
 // Escape for HTML data attribute
 var escapedText = plainText.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 %>
