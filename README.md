@@ -2,6 +2,8 @@
 
 极简风格 Hexo 博客主题，集成 [@chenglou/pretext](https://github.com/chenglou/pretext) ASCII 动画效果。
 
+网站预览: https://yingmuz.github.io/lulu-blog-pretext/
+
 A minimal Hexo blog theme with ASCII animations powered by [@chenglou/pretext](https://github.com/chenglou/pretext).
 
 ---
